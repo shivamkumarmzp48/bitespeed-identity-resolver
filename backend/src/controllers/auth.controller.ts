@@ -5,6 +5,11 @@ import { pool } from '../database/db';
 
 const JWT_SECRET = process.env.JWT_SECRET!;
 
+// Add this test endpoint (optional)
+export const test = (req: Request, res: Response) => {
+  res.json({ message: 'Auth routes are working!' });
+};
+
 export const signup = async (req: Request, res: Response) => {
   const { email, password } = req.body;
   if (!email || !password) {
