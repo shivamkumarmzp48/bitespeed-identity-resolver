@@ -20,8 +20,8 @@ app.use(cors({
       'http://localhost:5173',
       'http://localhost:3000',
       'https://bitespeed-identity-resolver.vercel.app',
-      'https://bitespeed-identity-resolver-fe5v505iy.vercel.app', // Your current frontend
-      frontendUrl
+      'https://bitespeed-identity-resolver-fe5v505iy.vercel.app', 
+      'https://bitespeed-identity-resolver-fe5v505iy.vercel.app/login'
     ];
     
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
